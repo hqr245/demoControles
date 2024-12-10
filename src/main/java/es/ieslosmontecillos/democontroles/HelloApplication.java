@@ -10,10 +10,13 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
 
 public class HelloApplication extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws IOException, ClassNotFoundException {
+
         StackPane root = new StackPane();
         VBox vb = new VBox();
         Scene scene = new Scene(root, 320, 240);
@@ -34,6 +37,7 @@ public class HelloApplication extends Application {
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {

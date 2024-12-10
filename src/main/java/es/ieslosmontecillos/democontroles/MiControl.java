@@ -8,6 +8,12 @@ import javafx.scene.layout.Region;
 
 public class MiControl extends Region {
     public MiControl(){
+        int prueba1;
+        boolean prueba2;
+        Integer prueba3;
+
+
+
         super();
         // marca la zona donde hacer click
         setStyle("-fx-border-color:red;");
